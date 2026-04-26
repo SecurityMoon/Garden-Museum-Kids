@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Garden Museum Kids</title>
+    <meta
+      name="description"
+      content="Garden Museum Kids digital workshop prototype with role selection, educational activities, gallery uploads, audio stories, and virtual exhibition rooms."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Garden Museum Kids home">
+        <img
+          class="museum-logo-image"
+          src="assets/images/garden-museum-logo.png"
+          alt="Garden Museum logo"
+        >
+        <span>
+          <strong>GARDEN MUSEUM</strong>
+          <small>LONDON</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#roles">Choose your role</a>
+        <a href="#gallery">Our galleries</a>
+        <a href="#virtual">Virtual exhibitions</a>
+        <a href="#parents">For Parents</a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <div class="modal" id="modal" hidden>
+      <button class="modal-bg" type="button" data-close-modal aria-label="Close"></button>
+      <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
+        <div id="modal-content"></div>
+      </article>
+    </div>
+  </body>
+</html>
